@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataTypes", "DataTypes\Data
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Game", "Game\Game.csproj", "{A0498568-2C38-41A6-A3C7-4B7A22727D30}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Arrays", "Arrays\Arrays.csproj", "{465034A3-A1D2-4FA1-9B91-C40EBD363ABA}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{A0498568-2C38-41A6-A3C7-4B7A22727D30}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A0498568-2C38-41A6-A3C7-4B7A22727D30}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A0498568-2C38-41A6-A3C7-4B7A22727D30}.Release|Any CPU.Build.0 = Release|Any CPU
+		{465034A3-A1D2-4FA1-9B91-C40EBD363ABA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{465034A3-A1D2-4FA1-9B91-C40EBD363ABA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{465034A3-A1D2-4FA1-9B91-C40EBD363ABA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{465034A3-A1D2-4FA1-9B91-C40EBD363ABA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
