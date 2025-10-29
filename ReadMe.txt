@@ -4,6 +4,9 @@ https://www.youtube.com/playlist?list=PLeqyOOqxeiIPna7oEwBxnlj3yEEZYFBWx
 https://www.ixbt.com/cpu/cpu-digest-2009.shtml
 
 TODO:
+1. Оптимизировать выполнение арифметических операций;
+
+DONE:
 1. Написать калькулятор, способный вычислять сложные выражения с любым количеством операций и скобками;
 2. В Solution 'OOP' добавить проект 'Fraction', и в нем реализовать класс 'Fraction', описывающий простую дробь.
    В классе должны быть все необходимые методы и операторы;
