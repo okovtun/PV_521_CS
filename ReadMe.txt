@@ -6,6 +6,11 @@ https://www.ixbt.com/cpu/cpu-digest-2009.shtml
 CERT_TRUST_REVOCATION_STATUS_UNKNOWN (Git) https://stackoverflow.com/questions/76674926/vs-2022-error-encountered-while-pushing-to-the-remote-repository-git-failed-w
 
 TODO:
+1. Добить ToString();
+2. Записать группу в файл (System.IO.StreamWriter);
+3. Загрузить группу из файла (System.IO.StreamReader);
+
+DONE:
 1. Оптимизировать выполнение арифметических операций;
 2. Реализовать вычисления со скобками;
 
