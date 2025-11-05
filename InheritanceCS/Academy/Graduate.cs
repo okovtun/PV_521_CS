@@ -41,5 +41,11 @@ namespace Academy
 		{
 			return base.ToStringCSV()+$",{Subject}";
 		}
+		public override Human Init(string[] values)
+		{
+			base.Init(values);
+			Subject = values[8];
+			return this;
+		}
 	}
 }

@@ -62,5 +62,14 @@ $"{Speciality.PadRight(24)}{Group.PadRight(8)}{Rating.ToString().PadRight(8)}{At
 			return base.ToStringCSV()
 				+ $",{Speciality},{Group},{Rating},{Attendance}";
 		}
+		public override Human Init(string[] values)
+		{
+			base.Init(values);
+			Speciality = values[4];
+			Group = values[5];
+			Rating = Convert.ToDouble(values[6]);
+			Attendance = Convert.ToDouble(values[7]);
+			return this;
+		}
 	}
 }
