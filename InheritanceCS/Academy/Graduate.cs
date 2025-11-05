@@ -33,5 +33,13 @@ namespace Academy
 			base.Info();
 			Console.WriteLine(Subject);
 		}
+		public override string ToString()
+		{
+			return base.ToString() + Subject;
+		}
+		public override string ToStringCSV()
+		{
+			return base.ToStringCSV()+$",{Subject}";
+		}
 	}
 }
