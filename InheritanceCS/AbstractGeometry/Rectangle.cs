@@ -7,7 +7,7 @@ using System.Drawing;
 
 namespace AbstractGeometry
 {
-	class Rectangle:Shape
+	class Rectangle:Shape, IHaveDiagonal
 	{
 		double width;
 		double height;
@@ -32,6 +32,10 @@ namespace AbstractGeometry
 		}
 		public override double GetArea() => Width * Height;
 		public override double GetPerimeter() => 2 * (Width + Height);
+		public double GetDiagonal()
+		{
+			return Math.Sqrt(Math.Pow(Width, 2) + Math.Pow(Height, 2));
+		}
 		public override void Draw(System.Windows.Forms.PaintEventArgs e)
 		{
 			Pen pen = new Pen(Color, LineWidth);
@@ -40,12 +44,24 @@ namespace AbstractGeometry
 			//e.Graphics.FillRectangle(brush, StartX, StartY, (float)Width, (float)Height);
 			//https://learn.microsoft.com/en-us/dotnet/desktop/winforms/advanced/how-to-draw-a-filled-rectangle-on-a-windows-form
 		}
+		public void DrawDiagonal(System.Windows.Forms.PaintEventArgs e)
+		{
+			Pen pen = new Pen(Color, 1);
+			e.Graphics.DrawLine
+				(
+				pen,
+				StartX, StartY,
+				StartX + (int)Width, StartY + (int)Height
+				);
+		}
 		public override void Info(System.Windows.Forms.PaintEventArgs e)
 		{
 			Console.WriteLine(this.GetType().ToString().Split('.').Last()+":");
 			Console.WriteLine($"Ширина:{Width}");
 			Console.WriteLine($"Высота:{Height}");
+			Console.WriteLine($"Диагональ:{GetDiagonal()}");
 			base.Info(e);
+			DrawDiagonal(e);
 		}
 	}
 }

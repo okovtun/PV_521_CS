@@ -6,6 +6,10 @@ https://www.ixbt.com/cpu/cpu-digest-2009.shtml
 CERT_TRUST_REVOCATION_STATUS_UNKNOWN (Git) https://stackoverflow.com/questions/76674926/vs-2022-error-encountered-while-pushing-to-the-remote-repository-git-failed-w
 
 TODO:
+1. Добавить и реализовать интерфейс 'IHaveDiameter';
+2. Добавить и реализовать интерфейс 'IHaveHeight';
+
+DONE:
 Продолжить задачу в ветке 'Abstract_HW_1':
 Реализовать иерархию геометрических фигур: квадрат, треугольник, круг, прямоугольник.....
 Для каждой фигуры должны выводиться ее первичные ствойства, такие как: длина стороны квадрата,

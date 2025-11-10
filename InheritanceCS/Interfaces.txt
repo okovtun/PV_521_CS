@@ -1,0 +1,7 @@
+﻿Interface - это набор абстрактных методов.
+"Имеет возможность" ("able")
+I...
+I...able:
+IMovable - 
+IFlyable -
+ISortable 
